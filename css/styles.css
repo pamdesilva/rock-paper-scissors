@@ -16,6 +16,14 @@ h2 {
   margin: 2em 0;
 }
 
+#moves h3 {
+  color: #495057;
+}
+
+#game_plays {
+  padding: 1em;
+}
+
 .user_move {
   background: #fff;
   color: salmon;
@@ -36,4 +44,32 @@ h2 {
 
 .score {
   font-size: 3em;
+}
+
+#reset {
+  margin: 1em 0;
+  font-size: 1.5em;
+  padding: 0.5em 2em;
+  background: #fff;
+  color: salmon;
+}
+
+#reset:hover {
+  background: #b400ff;
+  color: #fff;
+}
+
+footer {
+  background: #fff;
+  color: #333;
+  padding: 0.5em 0;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: salmon;
+}
+
+.btn:focus {
+  outline: none;
 }
