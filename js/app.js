@@ -85,4 +85,6 @@ $("#reset").click(function(){
   $("#game-result").html("");
   userMoveDisplay.html("");
   computerMoveDisplay.html("");
+  userMoveDisplayIcon.empty();
+  computerMoveDisplayIcon.empty();
 });

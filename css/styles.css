@@ -1,9 +1,16 @@
 body {
   background: salmon;
   color: #fff;
+  font-family: 'Oxygen', sans-serif;
 }
 
-header h1 {
+h1,
+h2,
+#game_plays h3 {
+  font-family: 'Pacifico', cursive;
+}
+
+h1 {
   font-size: 4em;
   margin: 1em 0;
 }
@@ -12,12 +19,13 @@ h2 {
   margin: 2em 0;
 }
 
-#play-btns {
-  margin: 2em 0;
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
 }
 
-#moves h3 {
-  color: #495057;
+#play-btns {
+  margin: 2em 0;
 }
 
 #game_plays {
@@ -68,8 +76,4 @@ footer {
 
 footer a {
   color: salmon;
-}
-
-.btn:focus {
-  outline: none;
 }
