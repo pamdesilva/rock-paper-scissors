@@ -13,32 +13,63 @@
 
 <body>
 
-  <div class="container">
+  <div class="container text-center">
 
-    <section class="mt-5">
+    <header class="text-center">
       <h1>Rock, Paper, Scissors</h1>
-      <div class="row ml-1 mt-5">
-        <button class="btn mr-5 btn-primary user_move" type="button">Rock</button>
-        <button class="btn mr-5 btn-primary user_move" type="button">Paper</button>
-        <button class="btn btn-primary user_move" type="button">Scissors</button>
+      <h2>Choose your move</h2>
+      <div class="row" id="play-btns">
+        <div class="col">
+          <button class="btn user_move mr-5 " type="button">Rock</button>
+          <button class="btn user_move mr-5 " type="button">Paper</button>
+          <button class="btn user_move" type="button">Scissors</button>
+        </div>
       </div>
+    </header>
+
+    <section id="moves">
+      <h2>Current moves</h2>
+      <div class="row" id="game_plays">
+        <div class="col">
+          <h3>You</h3>
+          <div id="user_play_icon" class="mt-3"></div>
+          <p class="lead mt-3" id="user_play"></p>
+        </div>
+        <div class="col">
+          <h3>Computer</h3>
+          <div id="computer_play_icon" class="mt-3"></div>
+          <p class="lead mt-3" id="computer_play"></p>
+        </div>
+      </div>
+      <h4 id="game-result" class="mt-5 display-3"></h4>
     </section>
 
-    <section class="mt-5">
-      <h2>Current move</h2>
-      <p>You:<span id="user_play"></span></p>
-      <p>Computer:<span id="computer_play"></span></p>
-    </section>
+    <hr />
 
     <section id="results" class="mt-5">
-      <h2 class="mb-3">Result</h2>
-      <h4><span id="game-result"></span></h4>
-      <p>Won:<span id="game_won"></span></p>
-      <p>Lost:<span id="game_lost"></span></p>
-      <p>Draw:<span id="game_draw"></span></p>
-      <p>Played:<span id="game_played"></span></p>
+      <h2>Result</h2>
+      <div class="row">
+        <div class="col">
+          <h4>Won</h4>
+          <p id="game_won" class="score"></p>
+        </div>
+        <div class="col">
+          <h4>Lost</h4>
+          <p id="game_lost" class="score"></p>
+        </div>
+        <div class="col">
+          <h4>Draw></h4>
+          <p id="game_draw" class="score"></p>
+        </div>
+      </div>
+      <div class="col">
+        <p>Played:<span id="game_played"></span></p>
+      </div>
       <button class="btn btn-primarye" type="button" id="reset">Reset</button>
     </section>
+
+    <footer>Icons by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </footer>
 
   </div>
 
