@@ -1,5 +1,5 @@
 body {
-  background: salmon;
+  background: tomato;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
 }
@@ -12,16 +12,29 @@ h2,
 
 h1 {
   font-size: 4em;
-  margin: 1em 0;
+  margin: 0.8em 0;
 }
 
 h2 {
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
 
 .btn:focus,.btn:active {
    outline: none !important;
    box-shadow: none;
+}
+
+.col-md {
+  padding: 2em 4.5em;
+}
+
+.moves {
+  background: #f8f9fa38;
+}
+
+.results {
+  /* background: #f8f9fa38; */
+  margin-left: 1em;
 }
 
 #play-btns {
@@ -31,6 +44,7 @@ h2 {
 #play-btns button {
   margin-top: 0.5em;
   margin-right: 0.5em;
+  padding: 0.5em 0.7em;
 }
 
 

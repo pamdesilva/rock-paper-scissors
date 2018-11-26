@@ -17,56 +17,59 @@
 
     <header class="text-center">
       <h1>Rock, Paper, Scissors</h1>
-      <h2>Choose your move</h2>
-      <div class="row" id="play-btns">
-        <div class="col">
-          <button class="btn user_move" type="button">Rock</button>
-          <button class="btn user_move" type="button">Paper</button>
-          <button class="btn user_move" type="button">Scissors</button>
-        </div>
-      </div>
     </header>
 
-    <section>
-      <div class="row" id="game_plays">
-        <div class="col">
-          <h3>You</h3>
-          <div id="user_play_icon" class="mt-3"></div>
-          <p class="lead mt-3" id="user_play"></p>
+    <div class="row">
+      <div class="col-md moves">
+        <h2>Choose your move</h2>
+        <div class="row" id="play-btns">
+          <div class="col">
+            <button class="btn user_move" type="button">Rock</button>
+            <button class="btn user_move" type="button">Paper</button>
+            <button class="btn user_move" type="button">Scissors</button>
+          </div>
         </div>
-        <div class="col">
-          <h3>Computer</h3>
-          <div id="computer_play_icon" class="mt-3"></div>
-          <p class="lead mt-3" id="computer_play"></p>
-        </div>
+        <section>
+          <div class="row" id="game_plays">
+            <div class="col">
+              <h3>You</h3>
+              <div id="user_play_icon" class="mt-3"></div>
+              <p class="lead mt-3" id="user_play"></p>
+            </div>
+            <div class="col">
+              <h3>Computer</h3>
+              <div id="computer_play_icon" class="mt-3"></div>
+              <p class="lead mt-3" id="computer_play"></p>
+            </div>
+          </div>
+        </section>
       </div>
-      <h4 id="game-result" class="m-5 display-3"></h4>
-    </section>
-
-    <hr />
-
-    <section id="results" class="mt-5">
-      <h2>Results</h2>
-      <div class="row mb-3">
-        <div class="col">
-          <h4>Won</h4>
-          <p id="game_won" class="score"></p>
-        </div>
-        <div class="col">
-          <h4>Lost</h4>
-          <p id="game_lost" class="score"></p>
-        </div>
-        <div class="col">
-          <h4>Draw</h4>
-          <p id="game_draw" class="score"></p>
-        </div>
-        <div class="col">
-          <h4>Played</h4>
-          <p id="game_played" class="score"></p>
-        </div>
+      <div class="col-md results">
+        <section>
+          <h2>Results</h2>
+          <h4 id="game-result" class="m-5 display-3"></h4>
+          <div class="row mb-3">
+            <div class="col">
+              <h4>Won</h4>
+              <p id="game_won" class="score"></p>
+            </div>
+            <div class="col">
+              <h4>Lost</h4>
+              <p id="game_lost" class="score"></p>
+            </div>
+            <div class="col">
+              <h4>Draw</h4>
+              <p id="game_draw" class="score"></p>
+            </div>
+            <div class="col">
+              <h4>Played</h4>
+              <p id="game_played" class="score"></p>
+            </div>
+          </div>
+          <button class="btn" type="button" id="reset">Reset</button>
+        </section>
       </div>
-      <button class="btn btn-primarye" type="button" id="reset">Reset</button>
-    </section>
+    </div>
 
   </div>
 

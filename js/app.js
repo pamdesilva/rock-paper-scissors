@@ -29,8 +29,8 @@ function computer_move() {
   computerMoveDisplayIcon.empty();
   var random_number = Math.floor(Math.random() * 3);
   computerPlay = computerChoices[random_number];
-  computerMoveDisplay.html(" " + computerPlay.charAt(0).toUpperCase() + computerPlay.slice(1)).hide().fadeIn(3000);
-  computerMoveDisplayIcon.hide().append("<img src='./images/" + computerPlay + ".png' />").fadeIn(3000);
+  computerMoveDisplay.html(" " + computerPlay.charAt(0).toUpperCase() + computerPlay.slice(1)).hide().fadeIn(2000);
+  computerMoveDisplayIcon.hide().append("<img src='./images/" + computerPlay + ".png' />").fadeIn(2000);
 }
 
 /////// Check who won and update scores
@@ -61,7 +61,7 @@ function checkWinner(user, computer) {
   }
 
   updateScoreDisplay(gameDraw, gameWon, gameLost, gamePlayed);
-  $("#game-result").html("You " + verdict + "!").hide().fadeIn(3500);
+  $("#game-result").html("You " + verdict + "!").hide().fadeIn(3000);
 }
 
 //// Function to update scores
