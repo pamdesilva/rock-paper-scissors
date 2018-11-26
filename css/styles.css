@@ -29,13 +29,14 @@ h2 {
 }
 
 .moves {
-  background: #f8f9fa38;
+  background: #f8f9fa21;
 }
 
 .results {
   /* background: #f8f9fa38; */
   margin-left: 1em;
 }
+
 
 #play-btns {
   margin: 2em 0;
@@ -54,19 +55,19 @@ h2 {
 
 .user_move {
   background: #fff;
-  color: salmon;
+  color: tomato;
   font-size: 1.5em;
   padding: 0.5em 1em;
   border: none;
 }
 
 .user_move:hover {
-  background: #495057;
+  background: #b400ff;
   color: #fff;
 }
 
 .active {
-  background: #495057;
+  background: #b400ff;
   color: white;
 }
 
@@ -79,7 +80,7 @@ h2 {
   font-size: 1.5em;
   padding: 0.5em 2em;
   background: #fff;
-  color: salmon;
+  color: tomato;
 }
 
 #reset:hover {
@@ -92,8 +93,13 @@ footer {
   color: #333;
   padding: 0.5em 0;
   font-size: 0.8em;
+  box-shadow: 2px -4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: block;
+  position: fixed;
+  bottom: 0;
 }
 
 footer a {
-  color: salmon;
+  color: tomato;
 }
