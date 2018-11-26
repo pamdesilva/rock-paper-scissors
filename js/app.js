@@ -16,8 +16,8 @@ $(".user_move").click(function(e) {
   $(".user_move").removeClass('active');
   userMoveDisplayIcon.empty();
   userPlay = $(this).text().toLowerCase();
-  userMoveDisplay.html(" " + userPlay.charAt(0).toUpperCase() + userPlay.slice(1));
-  userMoveDisplayIcon.append("<img src='./images/" + userPlay + ".png' />");
+  userMoveDisplay.html(" " + userPlay.charAt(0).toUpperCase() + userPlay.slice(1)).hide().fadeIn(500);
+  userMoveDisplayIcon.hide().append("<img src='./images/" + userPlay + ".png' />").fadeIn(500);
   $(this).addClass('active');
   computer_move();
   checkWinner(userPlay, computerPlay);
@@ -29,8 +29,8 @@ function computer_move() {
   computerMoveDisplayIcon.empty();
   var random_number = Math.floor(Math.random() * 3);
   computerPlay = computerChoices[random_number];
-  computerMoveDisplay.html(" " + computerPlay.charAt(0).toUpperCase() + computerPlay.slice(1));
-  computerMoveDisplayIcon.append("<img src='./images/" + computerPlay + ".png' />");
+  computerMoveDisplay.html(" " + computerPlay.charAt(0).toUpperCase() + computerPlay.slice(1)).hide().fadeIn(3000);
+  computerMoveDisplayIcon.hide().append("<img src='./images/" + computerPlay + ".png' />").fadeIn(3000);
 }
 
 /////// Check who won and update scores
@@ -61,7 +61,7 @@ function checkWinner(user, computer) {
   }
 
   updateScoreDisplay(gameDraw, gameWon, gameLost, gamePlayed);
-  $("#game-result").html("You " + verdict + "!");
+  $("#game-result").html("You " + verdict + "!").hide().fadeIn(3500);
 }
 
 //// Function to update scores
