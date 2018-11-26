@@ -1,5 +1,5 @@
 body {
-  background: tomato;
+  background: salmon;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
 }
@@ -55,7 +55,7 @@ h2 {
 
 .user_move {
   background: #fff;
-  color: tomato;
+  color: salmon;
   font-size: 1.5em;
   padding: 0.5em 1em;
   border: none;
@@ -80,7 +80,7 @@ h2 {
   font-size: 1.5em;
   padding: 0.5em 2em;
   background: #fff;
-  color: tomato;
+  color: salmon;
 }
 
 #reset:hover {
@@ -101,5 +101,5 @@ footer {
 }
 
 footer a {
-  color: tomato;
+  color: salmon;
 }
